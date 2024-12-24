@@ -29,7 +29,7 @@ class CircleShape(pygame.sprite.Sprite):
 
         return abs(math.sqrt(math.pow((x2-x1),2) + math.pow((y2-y1),2)))
 
-    def collision(self, shape):
+    def collides_with(self, shape):
         distance = self.__distance(shape)
 
         if distance < (self.radius + shape.radius):
